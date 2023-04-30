@@ -1,0 +1,47 @@
+#include <iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main() {
+
+    const int N = 10;
+    int array[N];
+    int sum = 0;
+    int count = 0;
+    int el=10000 ;
+    for (int i = 0; i < N; i++) {
+        cout << "array[" << i << "]= ";
+        cin >> array[i];     //введення чисел масиву
+        
+    }
+    for (int i = 0; i < 10 ;i++) 
+        cout << array[i] << " ";//виведення чисел усього масиву
+    for (int i = 0; i < N; i++) 
+        if (el > array[i]) 
+            el = array[i];//знаходження максимального елемента масиву
+    
+    
+    count <<\n" <<el << " max"<<endl;//виведення максимального елемента масиву
+    
+
+    for (int i = 0; i < 10; i++) {
+        if (el < 0)
+        {
+            sum += array[i];
+            cout<<sum;
+
+
+        }
+        
+        {
+            break; 
+        }
+    }
+    
+    cout <<"\n"<< sum<<endl;//виводить значення суми
+
+
+  
+    system("pause");
+}
